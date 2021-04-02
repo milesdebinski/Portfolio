@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --primary-color: #1985a0;
+  --primary-color2: #c2f6fd;
+  --secondary-color: #ffdf52;
+  --light-color: #ddd;
+  --dark-color: #222;
+  --max-width: 1100px;
+}
+
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  line-height: 1.6;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1680px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Main */
+.main {
+  color: #fff;
+}
+
+.main .header-bg {
+  background: var(--primary-color);
+  height: 600px;
+  border-radius: 3px;
+  position: fixed;
+  right: 1%;
+  left: 1%;
+  top: 2%;
+}
+.main .header {
+  padding: 70px;
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.header .left .logo {
+}
+
+.header .left h1 {
+  font-size: 3rem;
+}
+.header .left p {
+  margin-bottom: 30px;
+}
+
+.header .left .social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.social i {
+  color: var(--primary-color2);
+  margin-top: 20px;
+  margin-right: 27px;
+  cursor: pointer;
+  box-shadow: 6px 5px rgb(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: all ease 0.15s;
+}
+.social i:hover {
+  color: var(--secondary-color);
+  transform: scale(1.2);
+}
+
+/* Inner Grid */
+.inner-grid {
+  position: relative;
+  color: #000;
+  text-align: center;
+  background: var(--primary-color2);
+  margin-top: 590px;
+  margin-bottom: 200px;
+
+  border-radius: 3px;
+  z-index: 2;
+}
