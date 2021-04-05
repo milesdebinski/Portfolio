@@ -8,8 +8,8 @@
   --light-color: #ffffff;
   --dark-color: #333;
   --max-width: 1280px;
-  --outer-border: 4px;
-  --inner-border: 1px;
+  --outer-border: 0px;
+  --inner-border: 0px;
 }
 
 /* Reset */
@@ -114,22 +114,32 @@ body {
 
 .my-work-label {
   position: relative;
-  top: 490px;
-  left: 1020px;
+  top: 492px;
+  left: 960px;
   z-index: 3;
-  font-size: 20px;
-  font-style: italic;
-  background: linear-gradient(170deg, #1d8ca8 0%, #0b88aa 20%, #1985a0 100%);
-  color: #fff;
-  width: 170px;
-  border-top: solid 2px var(--secondary-color);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--light-color);
+  background: linear-gradient(
+    120deg,
+    rgb(31, 150, 180) 0%,
+    rgba(19, 137, 167, 1) 51%,
+    rgba(25, 133, 160, 1) 100%
+  );
+  cursor: default;
+  width: 190px;
+  padding: 3px 0;
+  border-top: solid 3px var(--secondary-color);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
   text-align: center;
 }
 
 /* Inner Grid */
 .inner-grid {
+  border-top: 4px solid var(--primary-color);
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr;
   grid-template-areas:
@@ -160,45 +170,21 @@ body {
 /* Projects - items */
 .inner-grid .item1 {
   grid-area: item1;
-  border-left: solid var(--outer-border) var(--primary-color);
-  border-top: solid var(--outer-border) var(--primary-color);
-  border-right: solid var(--inner-border) var(--primary-color);
-  border-bottom: solid var(--inner-border) var(--primary-color);
 }
 .inner-grid .item2 {
   grid-area: item2;
-  border-top: solid var(--outer-border) var(--primary-color);
-  border-right: solid var(--outer-border) var(--primary-color);
-  border-left: solid var(--inner-border) var(--primary-color);
-  border-bottom: solid var(--inner-border) var(--primary-color);
 }
 .inner-grid .item3 {
   grid-area: item3;
-  border-left: solid var(--outer-border) var(--primary-color);
-  border-right: solid var(--inner-border) var(--primary-color);
-  border-bottom: solid var(--inner-border) var(--primary-color);
-  border-top: solid var(--inner-border) var(--primary-color);
 }
 .inner-grid .item4 {
   grid-area: item4;
-  border-right: solid var(--outer-border) var(--primary-color);
-  border-left: solid var(--inner-border) var(--primary-color);
-  border-bottom: solid var(--inner-border) var(--primary-color);
-  border-top: solid var(--inner-border) var(--primary-color);
 }
 .inner-grid .item5 {
   grid-area: item5;
-  border-left: solid var(--outer-border) var(--primary-color);
-  border-bottom: solid var(--outer-border) var(--primary-color);
-  border-right: solid var(--inner-border) var(--primary-color);
-  border-top: solid var(--inner-border) var(--primary-color);
 }
 .inner-grid .item6 {
   grid-area: item6;
-  border-right: solid var(--outer-border) var(--primary-color);
-  border-bottom: solid var(--outer-border) var(--primary-color);
-  border-left: solid var(--inner-border) var(--primary-color);
-  border-top: solid var(--inner-border) var(--primary-color);
 }
 
 .project {
@@ -226,7 +212,7 @@ body {
 }
 /* Zoom image */
 .project:hover img {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 /* Bring text on hover */
@@ -254,6 +240,7 @@ body {
   width: 100%;
   height: 100%;
   line-height: 0;
+  transition: all ease 0.2s;
 }
 
 .project .text {
@@ -291,6 +278,7 @@ body {
   opacity: 0.7;
   margin: 0;
   cursor: pointer;
+  color: var(--secondary-color);
 }
 
 /* Text section */
@@ -301,6 +289,7 @@ body {
 .inner-grid h3 {
   padding: 10px 20px;
   text-align: left;
+  letter-spacing: 1px;
 }
 
 .inner-grid p {
