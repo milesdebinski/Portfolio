@@ -69,8 +69,8 @@ body {
   max-width: var(--max-width);
 }
 
-.header .left .logo {
-}
+/* .header .left .logo {
+} */
 
 .header .left h1 {
   font-size: 3rem;
