@@ -1,135 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/52d81d373d.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
-  <script src='script.js' defer></script>
-  <title>MD | Portfolio</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/52d81d373d.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src='script.js' defer></script>
+    <title>MD | Portfolio</title>
+  </head>
 
-<body>
+  <body>
 
-  <section class="main">
-    <div class="container">
-      <div class="header-bg">
-        <header class="header">
-          <div class="left">
-            <img src="./img/logo1A.png" class="logo">
-            <h1>Hello,</h1>
-            <p>My name is Miles Debinski. I am a Manchester based Front End Web Developer and passionate artist creating
-              cool stuff.</p>
-            <div class="social">
-              <i class="fas fa-envelope-square fa-2x"></i>
-              <a href="https://www.linkedin.com/in/miles-debinski-a6510120a/"><i class="fab fa-linkedin fa-2x"></i></a>
-              <a href="https://github.com/milesdebinski"><i class="fab fa-github-square fa-2x"></i></a>
-            </div>
+    <section class="main">
+
+      <!-- Project Popup -->
+      <!-- Project 1 -->
+      <div class="active modal" id="modal_1">
+        <img src="./img/projects/project1.jpg" alt="">
+        <div class="modal_text">
+          <div class="modal_header">
+            <div class="modal_title">Spend Abroad</div>
+            <button data-modal-close class="modal_close">&times;</button>
           </div>
-          <div class="right">
-            <img src="./img/front2.png" alt="">
+          <div class="modal_tags">
+            <span class="tag">HTML</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">CSS</span>
+            <span class="tag">FetchAPI</span>
           </div>
-        </header>
+          <h3>About</h3>
+          <div class="modal_body">SpendAbroad is an app that can be used to
+            check current exchange rates, as well as see which countries the
+            currency can be used in. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. <br><br>Culpa officia sed itaque consectetur
+            recusandae
+            tempora laborum placeat id animi nesciunt nam obcaecati ipsum est
+            hic, maxime perspiciatis suscipit doloremque cum iste ipsam
+            accusantium voluptate. Perferendis necessitatibus hic consequuntur
+            fugit ad libero deleniti provident perspiciatis, numquam beatae
+            fugiat aliquam cupiditate, dolore, voluptate excepturi? Placeat
+            aspernatur vero odio, natus animi consectetur qui maiores pariatur
+            ipsam hic minima dolore voluptas perspiciatis ea adipisci impedit
+            omnis explicabo! Sit sed ut quaerat qui! Ex earum dignissimos ea
+            similique facilis aliquid ab possimus officia laudantium repellat
+            perferendis eveniet in totam velit voluptatibus officiis, hic
+            nesciunt! Velit?</div>
+          <div class="modal_buttons">
+            <a href="https://github.com/milesdebinski/CurrencyExchange"
+              class="btn code_btn"><i class="fas fa-code"></i> code</a>
+            <a href="http://spendabroad.great-site.net/?i=1" class="btn
+              demo_btn"><i class="fas fa-eye"></i> demo</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="my-work-label">My recent work</div>
-      <div class="inner-grid">
-        <div class="info about">
-          <h3>About me</h3>
-          <p>Skills in HTML5, CSS3 and Javascript. Working knowledge of design tools such as Photoshop, Affinity
-            Designer/Photo. Currently learning SASS/SCSS and React 17.
-            <br>
-            Always happy to learn new technologies.
-          </p>
-        </div>
-        <div class="info process">
-          <h3>The process</h3>
-          <p>In all projects I was responsible for implementing all the HTML, CSS and Javascript. This process involved:
-          </p>
-          <ul>
-            <li><span>Analyzing and dividing design mockup for creating appropriate UI comonents and architecting the
-                styles codebase.</span></li>
-            <li><span>Testing code in multiple browsers to ensure cross-browser compatibility.</span></li>
-            <li><span>Following code styles if required.</span></li>
-            <li><span>Collaborating with UI/UX designers and Back End Developers</span></li>
-            <li><span>Constantly maintaining communication with supervisors/clinets.</span></li>
-          </ul>
-        </div>
 
-        <div class="project item1">
-          <div class="image">
-            <img src="./img/projects/project1.png" alt="">
-          </div>
-          <div class="text">
-            <div class="text-wrap">
-              <p class="text-category">UI</p>
-              <h2 class="text-title">Making Gradient Great Again</h2>
-            </div>
-          </div>
-        </div>
-        <div class="project item2">
-          <div class="image">
-            <img src="./img/projects/project2.png" alt="">
-          </div>
-          <div class="text">
-            <div class="text-wrap">
-              <p class="text-category">UI/UX</p>
-              <h2 class="text-title">World Experience</h2>
-            </div>
-          </div>
-        </div>
-        <div class="project item3">
-          <div class="image">
-            <img src="./img/projects/project3.png" alt="">
-          </div>
-          <div class="text">
-            <div class="text-wrap">
-              <p class="text-category">UI/UX</p>
-              <h2 class="text-title">World Experience</h2>
-            </div>
-          </div>
-        </div>
-        <div class="project item4">
-          <div class="image">
-            <img src="./img/projects/project4.png" alt="">
-          </div>
-          <div class="text">
-            <div class="text-wrap">
-              <p class="text-category">UI/UX</p>
-              <h2 class="text-title">World Experience</h2>
-            </div>
-          </div>
-        </div>
-        <div class="project item5">
-          <div class="image">
-            <img src="./img/projects/project5.png" alt="">
-          </div>
-          <div class="text">
-            <div class="text-wrap">
-              <p class="text-category">UI/UX</p>
-              <h2 class="text-title">World Experience</h2>
-            </div>
-          </div>
-        </div>
-        <div class="project item6">
-          <div class="image">
-            <img src="./img/projects/project6.png" alt="">
-          </div>
-          <div class="text">
-            <div class="text-wrap">
-              <p class="text-category">Game Development</p>
-              <h2 class="text-title">Unusual use of Javascript</h2>
-            </div>
-          </div>
-        </div>
+      <div class="overlay"></div>
 
-
-
+      <!-- Project 1 -->
+      <div class="modal" id="modal_2">
+        <div class="modal_header">
+          <div class="modal_title">Modal 2 title</div>
+          <button data-modal-close class="modal_close">&times;</button>
+        </div>
+        <div class="modal_body">Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Autem atque architecto ratione! Eligendi amet culpa
+          vitae? Delectus iusto ullam fugiat.</div>
       </div>
-  </section>
-</body>
+      <div class="overlay"></div>
 
-</html>
+      <div class="container">
+        <div class="header-bg">
+          <header class="header">
+            <div class="left">
+              <img src="./img/logo1A.png" class="logo">
+              <h1>Hello,</h1>
+              <p>My name is Miles Debinski. I am a Manchester based Front End
+                Web Developer and passionate artist creating
+                cool stuff.</p>
+              <div class="social">
+                <i class="fas fa-envelope-square fa-2x"></i>
+                <a href="https://www.linkedin.com/in/miles-debinski-a6510120a/"><i
+                    class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/milesdebinski"><i class="fab
+                    fa-github-square fa-2x"></i></a>
+              </div>
+            </div>
+            <div class="right">
+              <img src="./img/front2.png" alt="">
+            </div>
+          </header>
+        </div>
+      </div>
+      <div class="container">
+        <div class="my-work-label">My recent work</div>
+        <div class="inner-grid">
+          <div class="info about">
+            <h3>About me</h3>
+            <p>Skills in HTML5, CSS3 and Javascript. Working knowledge of design
+              tools such as Photoshop, Affinity
+              Designer/Photo. Currently learning SASS/SCSS and React 17.
+              <br>
+              Always happy to learn new technologies.
+            </p>
+          </div>
+          <div class="info process">
+            <h3>The process</h3>
+            <p>In all projects I was responsible for implementing all the HTML,
+              CSS and Javascript. This process involved:
+            </p>
+            <ul>
+              <li><span>Analyzing and dividing design mockup for creating
+                  appropriate UI comonents and architecting the
+                  styles codebase.</span></li>
+              <li><span>Testing code in multiple browsers to ensure
+                  cross-browser compatibility.</span></li>
+              <li><span>Following code styles if required.</span></li>
+              <li><span>Collaborating with UI/UX designers and Back End
+                  Developers</span></li>
+              <li><span>Constantly maintaining communication with
+                  supervisors/clinets.</span></li>
+            </ul>
+          </div>
+
+          <div data-modal-target="#modal_1" class="project item1">
+            <div class="image">
+              <img src="./img/projects/project1.jpg" alt="">
+            </div>
+            <div class="text">
+              <div class="text-wrap">
+                <p class="text-category">Currency Exchange</p>
+                <h2 class="text-title">SpendAbroad</h2>
+              </div>
+            </div>
+          </div>
+          <div data-modal-target="#modal_2" class="project item2">
+            <div class="image">
+              <img src="./img/projects/project2.png" alt="">
+            </div>
+            <div class="text">
+              <div class="text-wrap">
+                <p class="text-category">UI/UX</p>
+                <h2 class="text-title">World Experience</h2>
+              </div>
+            </div>
+          </div>
+          <div class="project item3">
+            <div class="image">
+              <img src="./img/projects/project3.png" alt="">
+            </div>
+            <div class="text">
+              <div class="text-wrap">
+                <p class="text-category">UI/UX</p>
+                <h2 class="text-title">World Experience</h2>
+              </div>
+            </div>
+          </div>
+          <div class="project item4">
+            <div class="image">
+              <img src="./img/projects/project4.png" alt="">
+            </div>
+            <div class="text">
+              <div class="text-wrap">
+                <p class="text-category">UI/UX</p>
+                <h2 class="text-title">World Experience</h2>
+              </div>
+            </div>
+          </div>
+          <div class="project item5">
+            <div class="image">
+              <img src="./img/projects/project5.png" alt="">
+            </div>
+            <div class="text">
+              <div class="text-wrap">
+                <p class="text-category">UI/UX</p>
+                <h2 class="text-title">World Experience</h2>
+              </div>
+            </div>
+          </div>
+          <div class="project item6">
+            <div class="image">
+              <img src="./img/projects/project6.png" alt="">
+            </div>
+            <div class="text">
+              <div class="text-wrap">
+                <p class="text-category">Game Development</p>
+                <h2 class="text-title">Unusual use of Javascript</h2>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </section>
+    </body>
+
+  </html>
